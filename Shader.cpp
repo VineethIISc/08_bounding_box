@@ -138,7 +138,7 @@ void Shader::setUniformVariable(const std::string& name, float value)
 
 void Shader::setUniformVariable(const std::string& name, Vector3f& value)
 {
-	glUniform1fv(glGetUniformLocation(programID, name.c_str()), 1, value);
+	glUniform3fv(glGetUniformLocation(programID, name.c_str()), 1, value);
 }
 
 void Shader::setUniformVariable(const std::string& name, Matrix4f& value)
